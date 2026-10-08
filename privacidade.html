@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de Privacidade</title>
+  <meta name="description" content="Política de Privacidade do autoshorts.">
+  <style>
+    :root { --bg: #ffffff; --fg: #1f2328; --muted: #59636e; --link: #0b62d6; --line: #d1d9e0; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0f1115; --fg: #e6e8eb; --muted: #9aa4af; --link: #6cb6ff; --line: #30363d; }
+    }
+    body { margin: 0; background: var(--bg); color: var(--fg);
+           font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
+    h1 { font-size: 2rem; margin: 0 0 4px; }
+    h2 { font-size: 1.2rem; margin-top: 32px; }
+    p.lead { color: var(--muted); margin-top: 0; }
+    a { color: var(--link); overflow-wrap: anywhere; }
+    ul { padding-left: 20px; }
+    footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line);
+             color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Política de Privacidade — autoshorts</h1>
+  <p class="lead">Última atualização: 6 de outubro de 2026</p>
+
+  <h2>1. O que é o autoshorts</h2>
+  <p>
+    O autoshorts é uma ferramenta pessoal, executada no computador do próprio usuário, que gera
+    vídeos curtos e os publica no canal do YouTube desse mesmo usuário. Não existe um serviço
+    on-line nem servidores do autoshorts: tudo roda localmente.
+  </p>
+
+  <h2>2. Serviços de API do YouTube</h2>
+  <p>
+    O autoshorts usa os Serviços de API do YouTube. Ao usar o autoshorts, você concorda com os
+    <a href="https://www.youtube.com/t/terms">Termos de Serviço do YouTube</a>. O tratamento de
+    dados pelo Google é regido pela
+    <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a>.
+  </p>
+
+  <h2>3. Dados acessados</h2>
+  <p>Com a sua autorização (Google OAuth), o autoshorts pode:</p>
+  <ul>
+    <li><strong>enviar vídeos</strong> para o seu canal do YouTube (permissão <code>youtube.upload</code>);</li>
+    <li><strong>ler informações básicas do canal</strong>, como o nome, para confirmar qual canal
+        foi autorizado (permissão <code>youtube.readonly</code>).</li>
+  </ul>
+  <p>
+    O autoshorts não acessa e-mails, contatos, comentários, histórico de visualização ou dados
+    de outros usuários.
+  </p>
+
+  <h2>4. Como os dados são usados e guardados</h2>
+  <ul>
+    <li>O token de autorização fica salvo <strong>apenas no seu computador</strong>, no arquivo
+        <code>token.json</code>, com acesso restrito ao seu usuário.</li>
+    <li>Títulos, descrições e identificadores dos vídeos enviados ficam num banco de dados local
+        (<code>autoshorts.db</code>) para evitar envios duplicados.</li>
+    <li>Nenhum desses dados é enviado ao desenvolvedor ou a servidores do autoshorts.</li>
+  </ul>
+
+  <h2>5. Compartilhamento</h2>
+  <p>
+    O autoshorts não vende nem compartilha dados pessoais. Os vídeos e seus metadados são
+    enviados somente ao YouTube. O tema e o roteiro de cada vídeo são enviados ao provedor de
+    inteligência artificial configurado pelo próprio usuário (por exemplo, a OpenAI) para gerar
+    o texto; nenhum dado da conta do YouTube é enviado a esse provedor.
+  </p>
+
+  <h2>6. Cookies</h2>
+  <p>O autoshorts não usa cookies nem ferramentas de rastreamento.</p>
+
+  <h2>7. Como revogar o acesso e apagar os dados</h2>
+  <ul>
+    <li>Revogue a autorização a qualquer momento em
+        <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>
+        ou nas <a href="https://security.google.com/settings/security/permissions">configurações
+        de segurança do Google</a>.</li>
+    <li>Para apagar os dados locais, exclua os arquivos <code>token.json</code> e
+        <code>autoshorts.db</code> da pasta do autoshorts.</li>
+  </ul>
+
+  <h2>8. Contato</h2>
+  <!-- Troque pelo seu e-mail de contato -->
+  <p>Dúvidas sobre esta política: <a href="mailto:seu-email@exemplo.com">seu-email@exemplo.com</a></p>
+
+  <footer><a href="index.html">← autoshorts</a></footer>
+</main>
+</body>
+</html>
